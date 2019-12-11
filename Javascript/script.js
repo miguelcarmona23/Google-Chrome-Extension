@@ -1,4 +1,4 @@
-const ACCESS_KEY = "";
+const ACCESS_KEY = "a52d14a1e5d7e41eaeba7b4e5586e5a7930416be85e271d3dcf06517452595b6";
 
 $(document).ready(function(){
   //current time
