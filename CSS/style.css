@@ -49,7 +49,7 @@ body{
   font-weight: 400;
   margin:0;
 }
-input.username, input.interest{
+input.user-name, input.interest{
   width:20em;
   text-align: center;
   background: 0;
