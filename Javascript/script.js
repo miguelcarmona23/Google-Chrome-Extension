@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+$(document).ready(function($){
     //current time
     //update every 10 seconds;
     setCurrentTime();
