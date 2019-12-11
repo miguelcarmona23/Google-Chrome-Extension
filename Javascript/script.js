@@ -79,26 +79,26 @@ $(document).ready(function () {
   });
 
 });
-function newimage(keyword) {
-  if (!ACCESS_KEY) {
+function newimage(keyword){
+  if(!ACCESS_KEY){
     alert("Please update your access key");
     return;
   }
   var url = `https://api.unsplash.com/search/photos?query=${keyword}&per_page=20&orientation=landscape&client_id=${ACCESS_KEY}`;
-  $.get(url, function (data) {
+  $.get(url,function(data){
     var picture = data.results[0];
 
     var picture_url = picture.urls.raw;
     var photo_by_name = picture.user.name;
     var photo_by_url = picture.user.links.html;
-    setCookie("picture", picture_url, 0.5);
-    setCookie("photo-by-name", photo_by_name, 0.5);
-    setCookie("photo-by-url", photo_by_url, 0.5);
+    setCookie("picture",picture_url,0.5);
+    setCookie("photo-by-name",photo_by_name,0.5);
+    setCookie("photo-by-url",photo_by_url,0.5);
     $('.interest-text').html(keyword);
     $('.photoby').html(photo_by_name);
-    $('.photoby').attr('href', photo_by_url);
-    $('body').css('background-image', `url(${picture_url})`);
-    $('.change-btn').css('display', 'block');
+    $('.photoby').attr('href',photo_by_url);
+    $('body').css('background-image',`url(${picture_url})`);
+
   });
 }
 

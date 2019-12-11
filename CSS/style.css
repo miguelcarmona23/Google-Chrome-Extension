@@ -49,7 +49,7 @@ body{
   font-weight: 400;
   margin:0;
 }
-input.user-name, input.interest{
+input.username, input.interest{
   width:20em;
   text-align: center;
   background: 0;
@@ -59,7 +59,6 @@ input.user-name, input.interest{
   font-size:30px;
   color: #fff;
   margin-top: 20px;
-  display:none;
 }
 a.photoby{
   color: rgba(255,255,255,0.5);
@@ -70,7 +69,7 @@ a.photoby{
   bottom: 20px;
   font-size: 20px;
   cursor:pointer;
-  display: none;
+  display: block;
 }
 .change-btn:hover{
   transition: all 0.5s ease-out;
