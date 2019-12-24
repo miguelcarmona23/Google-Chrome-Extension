@@ -31,7 +31,7 @@ $(document).ready(function () {
       $('body').css('background-image', `url(${picture_url})`);
       $('.change-btn').css('display', 'block');
     } else {
-      $('.greeting').html(`What's your interst?`);
+      $('.greeting').html(`What's your interest?`);
       $('.interest').css('display', 'inline-block');
     }
   } else {
