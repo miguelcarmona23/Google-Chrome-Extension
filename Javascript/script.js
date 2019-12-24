@@ -18,7 +18,7 @@ $(document).ready(function () {
     if (interest) {
       $('.interest').css('display', 'none');
       $('.interest-text').html(interest);
-      $('.greeting').html(`Hello <span class="stored-name">${username}</span>.`);
+      $('.greeting').html(`Hello <span class="stored-name">${username}</span>!`);
       var picture_url = getCookie('picture');
       var photo_by_name = getCookie('photo-by-name');
       var photo_by_url = getCookie('photo-by-url');
@@ -63,7 +63,7 @@ $(document).ready(function () {
       newimage(interest);
       var username = getCookie('username');
       $('.interest').fadeOut(function () {
-        $('.greeting').html(`Hello ${username}.`);
+        $('.greeting').html(`Hello ${username}!`);
         $('.greeting').fadeIn(function () {
 
           setCookie('interest', interest, 365);
