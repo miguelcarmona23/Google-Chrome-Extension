@@ -2,6 +2,8 @@
 
 This is a google chrome extension for the standby tab section.
 
+![Image description](/images/project_thumbnail.png)
+
 
 ## Built With
 
